@@ -1,0 +1,74 @@
+
+body {
+  background-color: white;
+  color: black;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+.nav {
+  background-color: cadetblue;
+  color: white;
+}
+
+.nav ul {
+  margin: 10px;
+  padding: 0px;
+  list-style-type: none;
+}
+
+.nav ul li {
+  padding: 16px;
+  text-align: center;
+  font-size: 1.3rem;
+  border-bottom: 1px solid black;
+  transition: background-color 0.2s;
+}
+
+.nav ul li:hover {
+  background-color: black;
+}
+
+  
+.image-area {
+  background-image:url("pngtree-headerimage.jpg");
+  background-position: center center;
+  background-color: black;
+  background-size: auto;
+  padding-top: 160px;
+  padding-bottom: 175px;
+
+  }
+
+
+.image-text {
+  text-align: center;
+  background-color:none;
+  color: rgb(73, 73, 184);
+  font-weight: bold;
+  font-style: oblique;
+  font-size: 2.5rem;
+  max-width: 1020px;
+  margin: 15px auto;
+  padding: 0px 16px;
+}
+
+   .services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin: 75px;
+    }
+  
+    .wrapper {
+      margin: 60px;
+      
+    }
+
+    .intro-text {
+      margin: 60px;
+    }
