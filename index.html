@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script language="JavaScript">
+      <!--
+      function calculateBmi() {
+      var weight = document.bmiForm.weight.value
+      var height = document.bmiForm.height.value
+      if(weight > 0 && height > 0){	
+      var finalBmi = weight/(height/100*height/100)
+      document.bmiForm.bmi.value = finalBmi
+      if(finalBmi < 18.5){
+      document.bmiForm.meaning.value = "That you are too thin."
+      }
+      if(finalBmi > 18.5 && finalBmi < 25){
+      document.bmiForm.meaning.value = "That you are healthy."
+      }
+      if(finalBmi > 25){
+      document.bmiForm.meaning.value = "That you have overweight."
+      }
+      }
+      else{
+      alert("Please Fill in everything correctly")
+      }
+      }
+      //-->
+      </script>
+     
     <title>Dowtown Personal Fitness Training</title>
     <meta charset="UTF-8" >
     <meta name="description" content="Personal Training, Fitness" >
@@ -19,38 +44,54 @@
       <div class="image-area">
         <div class="image-text">Downtown Personal Training</div>
       </div>
-      <div class="intro-text"><h1>Welcome to Downtown Personal Training!</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident rerum ratione obcaecati officiis 
+      <div class="intro-text"><h1>Welcome to Downtown Personal Training</h1><img src="coupon.jpg" 
+        alt="discount coupon" width=400 height=125 style="margin-left:30%;"><p>11Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident rerum ratione obcaecati officiis 
           consectetur quas exercitationem quis possimus! Dolor reiciendis facilis eius ipsa repudiandae illo 
           corrupti, laborum quas. Eius nesciunt, praesentium impedit accusamus exercitationem possimus 
           perspiciatis temporibus cupiditate quos dolorem? Maiores nulla a sapiente culpa aliquid inventore 
-          quibusdam numquam adipisci?lorem50</p>
-</div>
-      <div class="services">
+          quibusdam numquam adipisci?</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident rerum ratione obcaecati officiis consectetur quas exercitationem quis possimus! Dolor reiciendis facilis eius ipsa repudiandae illo corrupti, laborum quas. Eius nesciunt, praesentium impedit accusamus exercitationem possimus perspiciatis temporibus cupiditate 
+            quos dolorem? Maiores nulla a sapiente culpa aliquid inventore quibusdam numquam adipisci?</p>
+          
+        </div>
+       <div class="services">
         <div class="single-service">
-          <img src="matthew-lejune-JMH6m6BKL6U-unsplash.jpg"  width="250"/>
+          <img src="matthew-lejune-JMH6m6BKL6U-unsplash.jpg"  width="250" Class="Textwrap"/>
            <h2>Marathon Training:</h2>
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum delectus sint maxime placeat aut atque consequuntur soluta, temporibus nulla! Quasi, nesciunt. A molestias veniam, quia error distinctio itaque soluta iure eveniet esse laudantium iste maiores expedita? Ratione dolorem adipisci necessitatibus possimus animi vero ad qui esse, autem corporis nesciunt magni!
             
         </div>
         <div class="single-service2">
-          <img src="jannis-brandt-mmsQUgMLqUo-unsplash.jpg" width="250"/>
+          <img src="jannis-brandt-mmsQUgMLqUo-unsplash.jpg" width="250" Class="Textwrap"/>
           <h2>Nutrition Plans:</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, error tempore at explicabo accusamus iste unde quidem sit voluptatum est culpa earum praesentium dolorem distinctio aliquid modi provident amet laudantium ab. Ut ducimus quae voluptates? Delectus, quia consequatur atque obcaecati, aliquam recusandae maxime, accusamus voluptatum eum totam illo optio ut.
           </p>
         </div>
         <div class="single-service3">
-          <img src="benjamin-klaver-zAtTuN6Ykok-unsplash.jpg" width="250",  class="servicesimg"/>
+          <img src="benjamin-klaver-zAtTuN6Ykok-unsplash.jpg" width="250",  class="Textwrap"/>
            <h2>Strength Training:</h2>
            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui dicta ratione illo pariatur ex veritatis, incidunt et sunt ea facilis tempora quibusdam fugit suscipit. Mollitia distinctio nemo magni commodi eveniet ab doloremque, minima, repellat sequi at fuga nulla, aliquid fugit eaque ad incidunt inventore deleniti quidem voluptas alias non tempora?</p>
               </div>
-              <div class="contact-form">
-                 <h2>Contact Us:</h2>
-                 <p>Schedule Your Free Session!</p>
+              <div class="bmi-form">
+                 <h2>Are you at a healthy weight?</h2>
+                 <h3>Check Your BMI</h3>
+                 <form name="bmiForm">
+                  Your Weight(kg): <input type="text" name="weight" size="11"><br />
+                  Your Height(cm): <input type="text" name="height" size="11"><br />
+                  <input type="button" value="Calculate BMI" onClick="calculateBmi()"><br />
+                  Your BMI: <input type="text" name="bmi" size="11"><br />
+                  This Means: <input type="text" name="meaning" size="25"><br />
+                  <input type="reset" value="Reset" />
+                  </form>
                     </div>
               </div>
     </div>
-
+    <footer class="main-footer">
+      <span>&copy;2020 Downtown Personal Training.</span>
+      <P>121 Main Street</P>
+      <p>Smithville, KY 44412</p>
+      <p>(502)555-1111</p>
+    </footer>
   </body>
 </html>
