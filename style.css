@@ -62,23 +62,22 @@ body {
     grid-column-gap: 2px;
     grid-row-gap: 2px;
     column-width: 45%;
-    margin: 65px;
+    margin: 50px;
+    background-color: lightgoldenrodyellow;
      }
      
      .intro-text {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(2, 1fr);
-      grid-column-gap: 2px;
-      grid-row-gap: 2px;
-      column-width: 50%;
-      margin: 2.5% 2.5% 0 2.5%;
-
-      
+      column-width: 45%;
+      margin: 50px; 
+      background-color: lightgoldenrodyellow;      
      }
      
-    .wrapper {
+     .wrapper {
       margin: 60px;
+    
     }
 
     .bmi-form {
@@ -88,7 +87,7 @@ body {
 
     .main-footer {
     text-align: center;
-    font-size: .75em;
+    font-size: .8em;
     background-color: cadetblue;
     font-weight: bold;
     }
@@ -96,4 +95,11 @@ body {
     .Textwrap {
       float: left;
       margin: 5px;
-      
+    }    
+
+    body {
+      background-color: lightgoldenrodyellow;  
+      border-radius: 20px 20px 20px 20px;
+    }
+
+  
