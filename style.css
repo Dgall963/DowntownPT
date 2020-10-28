@@ -1,6 +1,6 @@
 
 body {
-  background-color: white;
+  background-color: lightgoldenrodyellow;  
   color: black;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
@@ -55,7 +55,7 @@ body {
   padding: 0px 16px;
 }
 
-   .services {
+   .services, .intro-text {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -66,21 +66,7 @@ body {
     background-color: lightgoldenrodyellow;
      }
      
-     .intro-text {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      column-width: 45%;
-      margin: 50px; 
-      background-color: lightgoldenrodyellow;      
-     }
-     
-     .wrapper {
-      margin: 60px;
-    
-    }
-
-    .bmi-form {
+     .bmi-form {
       border: solid black 1px;
       text-align: center;
     }
@@ -97,9 +83,38 @@ body {
       margin: 5px;
     }    
 
-    body {
-      background-color: lightgoldenrodyellow;  
-      border-radius: 20px 20px 20px 20px;
+    .contact {
+      text-align: center;
+      margin-top: 2.5%;
+      color:  rgb(73, 73, 184);
+      font-family: sans-serif; Arial:
     }
 
-  
+    form {
+      width: 500px;
+      margin: 10px auto;
+      margin-top: 70px;
+      padding: 15px 15 px;
+      border-radius: 25px;
+      padding-bottom: 55px;
+
+    }
+     
+    .contact  {
+     border:solid 1px black;
+     font-size: 18px;
+     height: auto;
+     width:45%;
+     background-color: #e8eeef;
+     color: #000;
+     margin-bottom: 20px;
+     margin-left: 60px;
+    }
+
+    .map {
+      margin-left: 60px;
+      width: 45%;
+      height: auto;
+      text-align: center;
+    
+    }

@@ -7,16 +7,16 @@
       var weight = document.bmiForm.weight.value
       var height = document.bmiForm.height.value
       if(weight > 0 && height > 0){	
-      var finalBmi = weight/(height/100*height/100)
+      var finalBmi = weight/(height * height) *703
       document.bmiForm.bmi.value = finalBmi
       if(finalBmi < 18.5){
-      document.bmiForm.meaning.value = "That you are too thin."
+      document.bmiForm.meaning.value = "You are too thin."
       }
       if(finalBmi > 18.5 && finalBmi < 25){
-      document.bmiForm.meaning.value = "That you are healthy."
+      document.bmiForm.meaning.value = "You are healthy."
       }
       if(finalBmi > 25){
-      document.bmiForm.meaning.value = "That you have overweight."
+      document.bmiForm.meaning.value = "You are overweight."
       }
       }
       else{
@@ -26,63 +26,65 @@
       //-->
       </script>
      
-    <title>Dowtown Personal Fitness Training</title>
+    <title>Downtown Personal Fitness Training</title>
     <meta charset="UTF-8" >
     <meta name="description" content="Personal Training, Fitness" >
     <link rel="stylesheet" href="style.css" >
       
         </head>
   <body>
+    
     <div class="nav">
       <ul>
-        <li>Personal Trainer Home</li>
-        <li>Our Location</li>
-        <li>Programs and Pricing</li>
+        <li><a href="index.html">Personal Trainer Home</a></li>
+        <li><a href="Location.html">Our Location</a></li>
+        <li><a href="Programs.html">Programs and Pricing</a></li>
         </ul>
     </div>
     <div class="wrapper"></div>
       <div class="image-area">
         <div class="image-text">Downtown Personal Training</div>
       </div>
-      <div class="intro-text"><h1 style="font-size: 2.5em;"><i>Welcome to Downtown Personal Training</i></h1><img src="coupon.jpg" 
-        alt="discount coupon" width=45% height=125;><p>11Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident rerum ratione obcaecati officiis 
+      <div class="intro-text"><h1 style="font-size: 2.5em;"><i>Welcome to Downtown Personal Training</i></h1>
+        <img src="coupon.jpg" width="40%" alt=coupon>
+        <p>11Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident rerum ratione obcaecati officiis 
           consectetur quas exercitationem quis possimus! Dolor reiciendis facilis eius ipsa repudiandae illo 
           corrupti, laborum quas. Eius nesciunt, praesentium impedit accusamus exercitationem possimus 
-          perspiciatis temporibus cupiditate quos dolorem? Maiores nulla a sapiente culpa aliquid inventore 
+          perspiciatis temporibus cupiditate quos dolorem? a aliquid inventore 
           quibusdam numquam adipisci?</p>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident rerum ratione obcaecati officiis consectetur quas exercitationem quis possimus! Dolor reiciendis facilis eius ipsa repudiandae illo corrupti, laborum quas. Eius nesciunt, praesentium impedit accusamus exercitationem possimus perspiciatis temporibus cupiditate 
-            quos dolorem? Maiores nulla a sapiente culpa aliquid inventore quibusdam numquam adipisci?</p>
+            quos dolorem? Maiores </p>
           
         </div>
        <div class="services">
         <div class="single-service">
-          <img src="matthew-lejune-JMH6m6BKL6U-unsplash.jpg"  width="30%" Class="Textwrap"/>
+          <img src="matthew-lejune-JMH6m6BKL6U-unsplash.jpg"  width="30%" Class="Textwrap" alt="woman stretching"/>
            <h2>Marathon Training:</h2>
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum delectus sint maxime placeat aut atque consequuntur soluta, temporibus nulla! Quasi, nesciunt. A molestias veniam, quia error distinctio itaque soluta iure eveniet esse laudantium iste maiores expedita? Ratione dolorem adipisci necessitatibus possimus animi vero ad qui esse, autem corporis nesciunt magni!
             
         </div>
         <div class="single-service2">
-          <img src="jannis-brandt-mmsQUgMLqUo-unsplash.jpg" width="30%" Class="Textwrap"/>
+          <img src="jannis-brandt-mmsQUgMLqUo-unsplash.jpg" width="30%" Class="Textwrap" alt="healthy foods"/>
           <h2>Nutrition Plans:</h2>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, error tempore at explicabo accusamus iste unde quidem sit voluptatum est culpa earum praesentium dolorem distinctio aliquid modi provident amet laudantium ab. Ut ducimus quae voluptates? Delectus, quia consequatur atque obcaecati, aliquam recusandae maxime, accusamus voluptatum eum totam illo optio ut.
           </p>
         </div>
         <div class="single-service3">
-          <img src="benjamin-klaver-zAtTuN6Ykok-unsplash.jpg" width="30%",  class="Textwrap"/>
+          <img src="benjamin-klaver-zAtTuN6Ykok-unsplash.jpg" width="30%",  class="Textwrap" alt="woman lifting weights"/>
            <h2>Strength Training:</h2>
            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui dicta ratione illo pariatur ex veritatis, incidunt et sunt ea facilis tempora quibusdam fugit suscipit. Mollitia distinctio nemo magni commodi eveniet ab doloremque, minima, repellat sequi at fuga nulla, aliquid fugit eaque ad incidunt inventore deleniti quidem voluptas alias non tempora?</p>
               </div>
               <div class="bmi-form">
                  <h2>Are you at a healthy weight?</h2>
-                 <h3>Check Your BMI</h3>
+                 <h2>Check Your BMI</h2>
                  <form name="bmiForm">
-                  Your Weight(kg): <input type="text" name="weight" size="11"><br />
-                  Your Height(cm): <input type="text" name="height" size="11"><br />
-                  <input type="button" value="Calculate BMI" onClick="calculateBmi()"><br />
-                  Your BMI: <input type="text" name="bmi" size="11"><br />
-                  This Means: <input type="text" name="meaning" size="25"><br />
-                  <input type="reset" value="Reset" />
+                  Your Weight(lbs): <input type="text" name="weight" size="11"><br>
+                  Your Height(inches): <input type="text" name="height" size="11"><br>
+                  <input type="button" value="Calculate BMI" onClick="calculateBmi()" style="font-size: 1em;"><br>
+                  Your BMI is: <input type="text" name="bmi" size="11"><br>
+                  This Means: <input type="text" name="meaning" size="25"><br>
+                  <input type="reset" value="Reset" style="font-size: 1em;" />
                   </form>
                     </div>
               </div>
