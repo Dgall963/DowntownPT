@@ -1,4 +1,4 @@
-<script language="JavaScript">
+
   
     $(document).ready(function () {
    function init() {
@@ -13,7 +13,7 @@
      }
    }
    init();
- });
+  });
  $('.stored').change(function () {
    localStorage[$(this).attr('name')] = $(this).val();
  });
