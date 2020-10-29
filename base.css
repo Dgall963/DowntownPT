@@ -1,6 +1,5 @@
 
-
-/* ================================= 
+ /* ================================= 
   Base Element Styles
 ==================================== */
 .nav {
@@ -53,7 +52,7 @@ ul {
   list-style: none;
 }
 p {
-	font-size: 1.12em;
+	font-size: 1em;
 	margin-bottom: 1.8em;
 }
 
@@ -79,7 +78,7 @@ img {
   font-weight: bold;
   position: absolute;
   bottom: 0;
-  width: 100%
+  width: 100%;
   }
 
 /* ---- Page Elements ---- */
