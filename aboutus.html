@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <script language="JavaScript">
+        $(document).ready(function () {
+          function init() {
+            if (localStorage["name"]) {
+              $('#name').val(localStorage["name"]);
+            }
+            if (localStorage["email"]) {
+              $('#email').val(localStorage["email"]);
+            }
+            if (localStorage["message"]) {
+              $('#message').val(localStorage["message"]);
+            }
+          }
+          init();
+         });
+        $('.stored').change(function () {
+          localStorage[$(this).attr('name')] = $(this).val();
+        });
+        //-->
+      </script>
+
+       <meta charset="UTF-8">
+        <title>About Us</title>
+        
+        <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="base.css">
+        <link rel="stylesheet" href="flexbox.css">
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<div class="nav">
+    <ul>
+      <li><a href="index.html">Personal Trainer Home</a></li>
+      <li><a href="aboutus.html">About Us</a></li>
+      </ul>
+  </div>
+		<div class="row">		
+		<div class="primary col">
+			<h1>Find Us</h1>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem iure amet odit in, molestiae hic nemo ea earum magnam, officiis labore impedit. Iste at, ea dolorem incidunt 
+        otam soluta quibusdam? Amet similique, ipsa rerum molestias earum quis. Vitae, adipisci quidem.</p>
+        <h3>Address:Piazza di Trevi, 00187 Roma RM, Italy</h3>      <h3>Phone: 222-222-1111</h3>
+      <img src="https://d9h7pokl084bf.cloudfront.net/static-maps?path=41.892986,12.4820967000001&width=40%&height=25%" alt="map">
+		</div><!--/.primary-->
+		
+		<div class="secondary col">
+      <h1>Contact Us</h1>
+      <h3>Complete the form below to claim your FREE session!</h3>
+			<p><form id="cf" method="post" action=""> 
+        
+        <fieldset> 
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name"
+          class="stored" />
+  
+          <label for="mail">Email</label>
+          <input type="email" id="email" name="email"
+          class="stored" />
+  
+          <label for="message">Message</label>
+          <textarea id="message" name="message" 
+          class="stored"></textarea>
+          </fieldset>
+      </fieldset>
+          <button type="submit" style="font-size: 1.25em;">Send</button>
+          <input id="clear" type="reset" style="font-size: 1.25em" />
+        </form></p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci dignissimos minus dicta distinctio. Maiores nemo neque, cupiditate consequuntur sapiente exercitationem libero velit tenetur ratione at, ipsa quisquam 
+          repellat obcaecati. Ex voluptas tempora! Iure nostrum aperiam laboriosam asperiores?</p>
+			</div><!--/.secondary-->
+		
+		<div class="tertiary col">
+			<h1>Group Fitness</h1>
+      <p><strong>Yoga: </strong>Basic, foundational yoga postures are practiced to align, strengthen and promote flexibility in the body. Breathing techniques and 
+        meditation are also integrated. You can expect an emphasis on simplicity, repetition, and ease of movement.</p>
+      <p><strong>Pilates: </strong>A low-impact exercise that aims to strengthen muscles while improving postural alignment and flexibility. 
+        Pilates moves tend to target the core, although the exercises work other areas of your body as well</p>
+      <p><strong>Zumba: </strong>Zumba is a fitness program that combines Latin and international music with dance moves. Zumba routines 
+        incorporate interval training — alternating fast and slow rhythms — to help improve cardiovascular fitness.</p>
+      	</div><!--/.tertiary-->	
+	</div>
+	
+  <footer class="main-footer">
+    <span>&copy;2020 Downtown Personal Training.</span>
+    <P>121 Main Street</P>
+    <p>Smithville, KY 44412</p>
+    <p>(502)555-1111</p>
+  </footer>
+	
+</body>
+</html>
+
+       

@@ -73,7 +73,7 @@ body {
       margin: 5px;
     }    
 
-    .contact {
+    fieldset {
       text-align: center;
       margin-top: 2.5%;
       font-family: sans-serif; 
@@ -83,8 +83,8 @@ body {
       width:45%;
       background-color: #e8eeef;
       color: #000;
-      margin-bottom: 20px;
-      margin-left: 60px;
+      margin-bottom: 5px;
+      margin-left: 0;
     }
 
     .services, .intro-text {
@@ -114,3 +114,6 @@ body {
 
       }
      
+      
+
+    
