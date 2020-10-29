@@ -63,7 +63,7 @@ body {
 
     .main-footer {
     text-align: center;
-    font-size: .8em;
+    font-size: .9em;
     background-color: cadetblue;
     font-weight: bold;
     }
@@ -76,8 +76,15 @@ body {
     .contact {
       text-align: center;
       margin-top: 2.5%;
-      color:  rgb(73, 73, 184);
       font-family: sans-serif; 
+      border:solid 1px black;
+      font-size: 18px;
+      height: auto;
+      width:45%;
+      background-color: #e8eeef;
+      color: #000;
+      margin-bottom: 20px;
+      margin-left: 60px;
     }
 
     .services, .intro-text {
@@ -86,26 +93,24 @@ body {
       grid-template-rows: repeat(1, 1fr);
       row-gap: 10px;
       column-width: auto;
+      padding-left: 5px;
+      padding-right: 5px;
       margin: 50px;
-      font-size: 1.1em;
-      background-color: lightgoldenrodyellow;
+      font-size: 1.12em;
+      background-color: lightgoldenrodyellow;}
 
-          
-    .contact  {
-     border:solid 1px black;
-     font-size: 18px;
-     height: auto;
-     width:45%;
-     background-color: #e8eeef;
-     color: #000;
-     margin-bottom: 20px;
-     margin-left: 60px;
-    }
-
-    .map {
-      margin-left: 60px;
-      width: 45%;
-      height: auto;
+      
+      .map {
       text-align: center;
-    
-    }
+      margin-top: 2.5%;
+      border:solid 1px black;
+      font-size: 19px;
+      height: auto;
+      width:45%;
+      margin-bottom: 40px;
+      margin-left: 60px;
+      margin-right: 60px;
+      padding-bottom: 20px;
+
+      }
+     
