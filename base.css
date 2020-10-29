@@ -76,7 +76,7 @@ img {
   font-size: .9em;
   background-color: cadetblue;
   font-weight: bold;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   }
