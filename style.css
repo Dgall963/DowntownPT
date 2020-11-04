@@ -8,6 +8,7 @@ body {
   margin: 0px;
 }
 
+ /* ---- Navigation ---- */
 .nav {
   background-color: cadetblue;
   color: white;
@@ -31,7 +32,7 @@ body {
   background-color: black;
 }
 
-  
+/* ---- Header Image ---- */
 .image-area {
   background-image:url("pngtree-headerimage.jpg");
   background-position: center center;
@@ -42,7 +43,7 @@ body {
 
   }
 
-
+ /* ---- Header Text  ---- */
 .image-text {
   text-align: center;
   background-color:none;
@@ -55,8 +56,7 @@ body {
   padding: 0px 16px;
 }
 
-   
-     .bmi-form {
+    .bmi-form {
       border: solid black 1px;
       text-align: center;
       background-color: lightgray;
@@ -69,6 +69,7 @@ body {
     font-weight: bold;
     }
 
+     /* ---- Textwrap to wrap images around services text ---- */
     .Textwrap {
       float: left;
       margin: 5px;
@@ -86,7 +87,7 @@ body {
       font-size: 1em;
       background-color: lightgoldenrodyellow;}
 
-      
+    /* ---- Location Map Image ---- */
       .map {
       text-align: center;
       margin-top: 2.5%;
@@ -100,6 +101,8 @@ body {
       padding-bottom: 20px;
 
       }
+
+       /* ---- Form ---- */
       fieldset {
         text-align: center;
         margin-top: 2.5%;
@@ -114,5 +117,5 @@ body {
         margin-left: 0;
     }
       
-
+   
     
