@@ -59,6 +59,7 @@ body {
      .bmi-form {
       border: solid black 1px;
       text-align: center;
+      background-color: lightgray;
     }
 
     .main-footer {
@@ -73,21 +74,7 @@ body {
       margin: 5px;
     }    
 
-    fieldset {
-      text-align: center;
-      margin-top: 2.5%;
-      font-family: sans-serif; 
-      border:solid 1px black;
-      font-size: 18px;
-      height: auto;
-      width:45%;
-      background-color: #e8eeef;
-      color: #000;
-      margin-bottom: 5px;
-      margin-left: 0;
-    }
-
-    .services, .intro-text {
+     .services, .intro-text {
       display: grid;
       grid-template-columns: repeat(2, 46%);
       grid-template-rows: repeat(1, 1fr);
@@ -113,7 +100,19 @@ body {
       padding-bottom: 20px;
 
       }
-     
+      fieldset {
+        text-align: center;
+        margin-top: 2.5%;
+        font-family: sans-serif;
+        border: solid 1px black;
+        font-size: 18px;
+        height: auto;
+        width: 45%;
+        background-color: #e8eeef;
+        color: #000;
+        margin-bottom: 5px;
+        margin-left: 0;
+    }
       
 
     

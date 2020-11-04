@@ -2,8 +2,9 @@
 <!DOCTYPE html>
     <html lang="en">
       <head>
-        <script language="JavaScript">
-        $(document).ready(function () {
+       <!--JS Contact Form -->
+        <script>
+          $(document).ready(function () {
           function init() {
             if (localStorage["name"]) {
               $('#name').val(localStorage["name"]);
@@ -25,7 +26,6 @@
 
        <meta charset="UTF-8">
         <title>About Us</title>
-        
         <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="base.css">
         <link rel="stylesheet" href="flexbox.css">
@@ -49,11 +49,13 @@
 		</div><!--/.primary-->
 		
 		<div class="secondary col">
+      
       <h1>Contact Us</h1>
       <h3>Complete the form below to claim your FREE session!</h3>
-			<p><form id="cf" method="post" action=""> 
+			<p><form id="cf" method="get" action=""> 
         
         <fieldset> 
+          <!-- contact form -->
           <label for="name">Name</label>
           <input type="text" id="name" name="name"
           class="stored" />
@@ -83,16 +85,16 @@
       <p><strong>Zumba: </strong>Zumba is a fitness program that combines Latin and international music with dance moves. Zumba routines 
         incorporate interval training — alternating fast and slow rhythms — to help improve cardiovascular fitness.</p>
       	</div><!--/.tertiary-->	
-	</div>
+	  </div>
 	
-  <footer class="main-footer">
-    <span>&copy;2020 Downtown Personal Training.</span>
-    <P>121 Main Street</P>
-    <p>Smithville, KY 44412</p>
-    <p>(502)555-1111</p>
-  </footer>
+    <footer class="main-footer">
+      <span>&copy;2020 Downtown Personal Training.</span>
+      <p>121 Main Street</p>
+      <p>Smithville, KY 44412</p>
+     <p>(502)555-1111</p>
+    </footer>
 	
-</body>
-</html>
+  </body>
+  </html>
 
        
