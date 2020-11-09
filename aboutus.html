@@ -3,22 +3,34 @@
     <html lang="en">
       <head>
        <!--JS Contact Form Validation code -->
-       <script>
-              function validate() {
-           
-              if( document.myForm.Name.value == "" ) {
-                 alert( "Please provide your name!" );
-                 document.myForm.Name.focus() ;
-                 return false;
-              }
-              if( document.myForm.Country.value == "-1" ) {
-                 alert( "Please provide your country!" );
-                 return false;
-              }
-              return( true );
-           }
-        
-      </script>
+       <script type = "text/javascript">
+         <!--
+           function validate() {
+       if( document.myForm.Name.value == "" ) {
+         alert( "Please provide your name!" );
+         document.myForm.Name.focus() ;
+         return false;
+      }
+      if( document.myForm.EMail.value == "" ) {
+         alert( "Please provide your Email!" );
+         document.myForm.EMail.focus() ;
+         return false;
+      }
+      if( document.myForm.Zip.value == "" || isNaN( document.myForm.Zip.value ) ||
+         document.myForm.Zip.value.length != 5 ) {
+         
+         alert( "Please provide a zip in the format #####." );
+         document.myForm.Zip.focus() ;
+         return false;
+      }
+      if( document.myForm.Country.value == "-1" ) {
+         alert( "Please provide your country!" );
+         return false;
+      }
+      return( true );
+   }
+//-->
+</script>
         <meta charset="UTF-8">
         <title>About Us</title>
         <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
@@ -44,15 +56,13 @@
 		</div>
 		
 		<div class="secondary col">
+      <!-- contact form -->
       
       <h1>Contact Us</h1>
       <h3>Complete the form below to claim your FREE session!</h3>
-			<p><form id="cf" method="get" action=""> 
-        
-        <fieldset> 
-          <!-- contact form -->
+      <fieldset>                       
           <form action = "/cgi-bin/test.cgi" name = "myForm" onsubmit = "return(validate());">
-            <table cellspacing = "2" cellpadding = "2" cellborder =>
+            <table cellspacing = "2" cellpadding = "2" cellborder ="1">
                
                <tr>
                   <td align = "right">Name</td>
@@ -83,7 +93,7 @@
                
                <tr>
                   <td align = "right"></td>
-                  <td><input type = "submit" value = "Submit"/></td>
+                  <td><input type = "submit" value = "Submit" id="submit-btn"/></td>
                </tr>
                
             </table>
