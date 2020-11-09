@@ -2,40 +2,24 @@
 <!DOCTYPE html>
     <html lang="en">
       <head>
-       <!--JS Contact Form and Validation code -->
-        <script>
-          $(document).ready(function () {
-          function init() {
-            if (localStorage["name"]) {
-              $('#name').val(localStorage["name"]);
-            }
-
-              if (localStorage["email"]) {
-              $('#email').val(localStorage["email"]);
-            }
-            if (localStorage["message"]) {
-              $('#message').val(localStorage["message"]);
-            }
-          }
-          init();
-         });
-        $('.stored').change(function () {
-          localStorage[$(this).attr('name')] = $(this).val();
-        });
-
-        //-->
-        function validateForm() {
-  var x = document.form["cf"]["name"].val;
-  if (x == "" || x==null) {
-    alert("Name must be filled out");
-    return false;
-  }
-}
-     
-</script> 
-
-        </script>  
-       <meta charset="UTF-8">
+       <!--JS Contact Form Validation code -->
+       <script>
+              function validate() {
+           
+              if( document.myForm.Name.value == "" ) {
+                 alert( "Please provide your name!" );
+                 document.myForm.Name.focus() ;
+                 return false;
+              }
+              if( document.myForm.Country.value == "-1" ) {
+                 alert( "Please provide your country!" );
+                 return false;
+              }
+              return( true );
+           }
+        
+      </script>
+        <meta charset="UTF-8">
         <title>About Us</title>
         <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="base.css">
@@ -67,22 +51,45 @@
         
         <fieldset> 
           <!-- contact form -->
-          <label for="name">Name(Required)</label>
-          <input type="text" id="name" name="name"
-          class="stored" />
-  
-          <label for="mail">Email</label>
-          <input type="email" id="email" name="email"
-          class="stored" />
-  
-          <label for="message">Message</label>
-          <textarea id="message" name="message" 
-          class="stored"></textarea>
-          </fieldset>
-      </fieldset>
-          <button type="submit" style="font-size: 1.25em;">Send</button>
-          <input id="clear" type="reset" style="font-size: 1.25em" />
-        </form></p>
+          <form action = "/cgi-bin/test.cgi" name = "myForm" onsubmit = "return(validate());">
+            <table cellspacing = "2" cellpadding = "2" cellborder =>
+               
+               <tr>
+                  <td align = "right">Name</td>
+                  <td><input type = "text" name = "Name" /></td>
+               </tr>
+               
+               <tr>
+                  <td align = "right">EMail</td>
+                  <td><input type = "text" name = "EMail" /></td>
+               </tr>
+               
+               <tr>
+                  <td align = "right">Zip</td>
+                  <td><input type = "text" name = "Zip" /></td>
+               </tr>
+               
+               <tr>
+                  <td align = "right">Country</td>
+                  <td>
+                     <select name = "Country">
+                        <option value = "-1" selected>[choose yours]</option>
+                        <option value = "1">USA</option>
+                        <option value = "2">UK</option>
+                        <option value = "3">INDIA</option>
+                     </select>
+                  </td>
+               </tr>
+               
+               <tr>
+                  <td align = "right"></td>
+                  <td><input type = "submit" value = "Submit"/></td>
+               </tr>
+               
+            </table>
+         </form>
+         </fieldset> 
+        <h3>Lose Weight Now!</h3>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci dignissimos minus dicta distinctio. Maiores nemo neque, cupiditate consequuntur sapiente exercitationem libero velit tenetur ratione at, ipsa quisquam 
           repellat obcaecati. Ex voluptas tempora! Iure nostrum aperiam laboriosam asperiores?</p>
       </div>

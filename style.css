@@ -105,16 +105,16 @@ body {
        /* ---- Form ---- */
       fieldset {
         text-align: center;
-        margin-top: 2.5%;
+        margin-top: 2.25%;
         font-family: sans-serif;
         border: solid 1px black;
         font-size: 18px;
         height: auto;
         width: 45%;
-        background-color: #e8eeef;
+        background-color: #d0d6d7;
         color: #000;
         margin-bottom: 5px;
-        margin-left: 0;
+        margin-left: 5px;
     }
       
    
