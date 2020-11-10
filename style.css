@@ -69,7 +69,7 @@ body {
     font-weight: bold;
     }
 
-     /* ---- Textwrap to wrap images around services text ---- */
+    /* ---- Textwrap to wrap images around services text ---- */
     .Textwrap {
       float: left;
       margin: 5px;
